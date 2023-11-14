@@ -26,11 +26,11 @@
 
 <body>
     <header>
-        <!-- Construçã da barra de navegação -->
-        <nav class="navbar navbar-expand-lg fixed-top bg-cor-menu">
+        <!-- Construção da barra de navegação -->
+        <nav class="navbar navbar-expand-md fixed-top bg-cor-menu">
             <section class="container py-3">
                 <a href="" class="navbar-brand">                    
-                    <img src="images/timetable.png" width="40rem" alt="Sumiu" class="img-fluid">
+                    <img src="images/icone.png" width="40rem" alt="Sumiu" class="img-fluid">
                     <span>Agenda CRUD</span>
                 </a>
 
@@ -52,7 +52,7 @@
                 <section class="collapse navbar-collapse" id="navbar-items">
                     <ul class="navbar-nav me-auto mb-0 mb-lg-0">
                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                       <li class="nav-item"><a href="" class="nav-link">Wawa</a></li>
+                       <li class="nav-item"><a href="" class="nav-link">Vagas</a></li>
                        <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
                        <li class="nav-item"><a href="" class="nav-link">Ajuda</a></li>
                     </ul>
@@ -143,10 +143,10 @@
                     <section class="card">
                         <img src="images/kity.jpg" alt="wawa-cat" class="img-fluid">
                         <section class="card-body">
-                            <h4 class="card-title">Novos projetos</h4>
-                            <p class="card-text">wawa</p>
-                            <a href="" class="btn btn-success">veja mais</a>
-                            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalCreate">
+                            <h4 class="card-title">Currículo - Clique no botão para fazer seu currículo</h4>
+                            <p class="card-text">preencha todos os campos.</p>
+                            <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCreate">Criar</a>
+                            <button type="button" class="btn btn-outline-success">
                                 abrir
                             </button>
                         </section>
@@ -157,9 +157,9 @@
                     <section class="card">
                         <img src="images/kity.jpg" alt="wawa-cat" class="img-fluid">
                         <section class="card-body">
-                            <h4 class="card-title">Novos projetos</h4>
-                            <p class="card-text">wawa</p>
-                            <a href="" class="btn btn-warning">veja mais</a>
+                            <h4 class="card-title">Adicione sua formação e seus antigos empregos</h4>
+                            <p class="card-text">preencha todos os campos.</p>
+                            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalView">Criar</a>
                             <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#modalView">
                                 abrir
                             </button>
@@ -171,10 +171,10 @@
                     <section class="card">
                         <img src="images/kity.jpg" alt="wawa-cat" class="img-fluid">
                         <section class="card-body">
-                            <h4 class="card-title">Novos projetos</h4>
-                            <p class="card-text">wawa</p>
-                            <a href="" class="btn btn-danger">veja mais</a>
-                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modalView2">
+                            <h4 class="card-title">Delete seu currículo para criar um novo</h4>
+                            <p class="card-text">delete o que você não for usar.</p>
+                            <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalView2">Excluir</a>
+                            <button type="button" class="btn btn-outline-danger" >
                                 abrir
                             </button>
                         </section>
@@ -185,10 +185,10 @@
                     <section class="card">
                         <img src="images/kity.jpg" alt="wawa-cat" class="img-fluid">
                         <section class="card-body">
-                            <h4 class="card-title">Novos projetos</h4>
-                            <p class="card-text">wawa</p>
-                            <a href="" class="btn btn-dark">veja mais</a>
-                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalView3">
+                            <h4 class="card-title">Insira imagens e visualize seu currículo</h4>
+                            <p class="card-text">utilize imagens 500x500.</p>
+                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalView3">Adicionar</a>
+                            <button type="button" class="btn btn-outline-dark">
                                 abrir
                             </button>
                         </section>
@@ -201,83 +201,78 @@
 
     <!--area de modais-->
     <section class="modal fade" id="modalCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <section class="modal-dialog modal-dialog-centered modal-lg">
+      <section class="modal-dialog modal-dialog-centered modal-md">
           <section class="modal-content">
-            
-            <section class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </section>
-            
-            <section class="modal-body">
-                <!--Aq vai o formulario-->
-                <form>
-                    <section class="form-group row">
-
-                      <section class="form-group col-md-3">
-                            <label for="inputCPF">CPF</label>
-                            <input type="text" class="form-control" id="inputCPF" placeholder="Seu CPF">
-                      </section>
-                      <section class="form-group col-md-6">
-                            <label for="inputNome">Nome</label>
-                            <input type="text" class="form-control" id="inputNome" placeholder="Seu nome">
-                      </section>
-                    </section>
+              <section class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Cliente</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </section>
+              <section class="modal-body">
+              <!--Formulario-->
+              <form>
+                  <section class="form-group row">
+  
                     <section class="form-group col-md-3">
-                      <label for="inputSenha">Senha</label>
-                      <input type="password" class="form-control" id="inputSenha" placeholder="Sua senha">
+                      <label for="inputCPF">CPF</label>
+                      <input type="text" class="form-control" id="inputCPF" placeholder="Seu CPF">
                     </section>
-
-                    <section class="form-group">
-                      <label for="inputAddress2">Endereço </label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+  
+                    <section class="form-group col-md-6">
+                      <label for="inputnome">Nome</label>
+                      <input type="text" class="form-control" id="inputnome" placeholder="Nome Completo">
                     </section>
-
-                    <section class="form-group">
-                        <label for="inputAddress2">Endereço 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-                      </section>
-
-                    <section class="form-row">
-                      <section class="form-group col-md-6">
-                        <label for="inputCity">Cidade</label>
-                        <input type="text" class="form-control" id="inputCity">
-                      </section>
-                      <section class="form-group col-md-4">
-                        <label for="inputEstado">Estado</label>
-                        <select id="inputEstado" class="form-control">
-                          <option selected>Escolher...</option>
-                          <option>...</option>
-                        </select>
-                      </section>
-                      <section class="form-group col-md-2">
-                        <label for="inputCEP">CEP</label>
-                        <input type="text" class="form-control" id="inputCEP">
-                      </section>
+                       
+                    <section class="form-group col-md-3">
+                      <label for="inputPassword4">Senha</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
                     </section>
-                    <section class="form-group">
-                      <section class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Clique em mim
-                        </label>
-                      </section>
+                  </section>
+                  <section class="form-group">
+                    <label for="inputAddress">Endereço</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                  </section>
+                  <section class="form-group">
+                    <label for="inputAddress2">Endereço 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+                  </section>
+                  <section class="form-row">
+                    <section class="form-group col-md-6">
+                      <label for="inputCity">Cidade</label>
+                      <input type="text" class="form-control" id="inputCity">
                     </section>
-                    <button type="submit" class="btn btn-primary">Entrar</button>
-                  </form>
-            </section>
-            
-            <section class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </section>
-
+                    <section class="form-group col-md-4">
+                      <label for="inputEstado">Estado</label>
+                      <select id="inputEstado" class="form-control">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                      </select>
+                    </section>
+                    <section class="form-group col-md-2">
+                      <label for="inputCEP">CEP</label>
+                      <input type="text" class="form-control" id="inputCEP">
+                    </section>
+                  </section>
+                  <section class="form-group">
+                    <section class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Lembrar
+                      </label>
+                    </section>
+                  </section>
+                  <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+              </section>
+              <section class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Salvar alterações</button>
+              </section>
           </section>
-        </section>
+      </section>
     </section>
 
     <section class="modal fade" id="modalView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <section class="modal-dialog">
+        <section class="modal-dialog modal-dialog-centered modal-md">
           <section class="modal-content">
             
             <section class="modal-header">
@@ -286,12 +281,22 @@
             </section>
             
             <section class="modal-body">
-                Ei pessoal, vocês sabiam que, em termos biológicos entre humanos homens e pokémons fêmeas, a Vaporeon é mais compatível para os humanos?
+              <form>
+                <section class="mb-3">
+                  <label for="Formation" class="form-label">Formação</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </section>
+                <section class="mb-3">
+                  <label for="Experience" class="form-label">Experiências anteriores</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1">
+                </section>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
             </section>
             
             <section class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Salvar alterações</button>
             </section>
 
           </section>
@@ -299,7 +304,7 @@
     </section>
 
     <section class="modal fade" id="modalView2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <section class="modal-dialog">
+        <section class="modal-dialog modal-dialog-centered modal-md">
           <section class="modal-content">
             
             <section class="modal-header">
@@ -308,12 +313,12 @@
             </section>
             
             <section class="modal-body">
-              hey, just wondering if you got your photos printed? bongos binted? what 👽
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corporis tempora facilis commodi debitis iste laborum. Voluptate, nihil officiis nesciunt illo similique, optio repellat minus sunt perferendis sequi quis ad.
             </section>
             
             <section class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Salvar alterações</button>
             </section>
 
           </section>
@@ -321,7 +326,7 @@
     </section>
 
     <section class="modal fade" id="modalView3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <section class="modal-dialog">
+        <section class="modal-dialog modal-dialog-centered modal-md">
           <section class="modal-content">
             
             <section class="modal-header">
@@ -330,12 +335,12 @@
             </section>
             
             <section class="modal-body">
-              ...
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magni laboriosam! Ratione quis asperiores accusantium magni molestiae obcaecati deserunt, architecto reiciendis, dicta aliquam sapiente velit, nemo soluta tempora delectus consequuntur.
             </section>
             
             <section class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-primary">Salvar alterações</button>
             </section>
 
           </section>
